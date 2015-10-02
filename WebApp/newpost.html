@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Memory Lane</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+
+<body>
+
+
+<div class="header">
+	<div class="profileheader">
+		<a href="#" class="profilelink"><h2 class="profilename">MATTHEW_ONG</h2></a>
+	</div>
+<div class="settingheader">
+	<a href="#" class="profilelink"><h2 class="headercog"><i class="fa fa-cog"></i></h2></a>
+	</div>	
+	<div class="logo">
+		
+			
+		<a href="#" class="profilelink"><h1 class="headermaintext">Memory Lane</h1></a>
+		
+	</div>
+
+</div>	
+	
+	<hr>
+
+<div id="content">
+	<h1> New Memory </h1>
+	<div class="grid-16-8 clearfix">
+		<div class="memory">
+			<form id="form_note" method="post">
+				<div style="display: none;">
+					<input >
+				</div>
+				<p class="autosave-tip">
+					Automatically saved
+					<span> 09/29/15 17:17:17</span>
+				</p>
+				<div class="row note-title">
+					<label class="field" for="note_title" > Title: </label>
+					<div>
+						<input tabindex="1" id="note_title" name="note_title" type="text" value autofocus>
+					</div>
+				</div>
+				<div class="row note=text">
+
+					<ul class="control-panel">
+						<li class="link-btn">
+							<a class="lnk-flat" href="#link" title="add link"> Add link</a>
+						</li>
+					</ul>
+
+					<label class="field" for ="note_text" style="color: white; background-color: #CE421E;" > Memory: </label>
+
+					<textarea tabindex="2" id="note_text" name="note_text"></textarea>
+				</div>
+				<div class="row note-privacy">
+					<label class="field" > Privacy setting: </label>
+					<label>
+						<input tabindex="4" name="note_privacy" type="radio" value="P" checked>
+						<span> Everyone can read this.</span>
+					</label>
+					<label>
+						<input tabindex="5" name="note_privacy" type="radio" value="S" checked>
+						<span> Only my friends can read this. </span>
+					
+					</label>
+
+					<label>
+						<input tabindex="6" name="note_privacy" type="radio" value="X" checked>
+						<span> Only I can read this. </span>
+					</label>
+				</div>
+				<div class="row footer">
+					<div class="error-msg board"></div>
+					<span class="bn-flat">
+						<input tabindex="9" id="preview_note" value ="Preview " type="button" class="bn-flat">
+					</span>
+
+					<input tabindex="10" id="preview_note" value="Memorize" type="submit" class="btn" name="note_submit" style="color: white; background-color:#CE421E;">
+					
+					<span class="bn-flat cancel-note">
+						<input tabindex="11" id="cancel_note" value="Cancel" type="submit" class="bn-flat" name=""cancel_note>
+					</span>
+					
+				</div>
+			</form>
+			<div id="preview"></div>
+		</div>
+
+
+
+
