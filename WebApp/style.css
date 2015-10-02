@@ -42,7 +42,6 @@ a {
 	font-size: 2.3em; 
 	margin-top: 0; 
 	margin-bottom: 0;
-	font-family: Snell Roundhand;
 }
 
 .headercog {
@@ -120,7 +119,7 @@ a {
 	margin: 0;
 	padding: 0 0 15px 0;
 	line-height: 1.1;
-	font-family: Snell Roundhand;
+	font-family: "Snell Roundhand";
 }
 .grid-16-8 .memory{
 	float: left;
@@ -216,12 +215,6 @@ a:active{
 	cursor: text;
 	margin: 6px 0 0 9px;
 }
-
-.isay-act{
-	height: 100%;
-	display: inline-block;
-}
-
 #db-isay .isay-act{
 	word-break: break-all;
 }
@@ -464,19 +457,6 @@ a.signup {
 .passwordReset {
 	font-size: 12px;
 }
-
-.tagField {
-	padding: 3px 0 0 5px;
-	border-width: 0;
-	text-align: left;
-	margin: 10px 0;
-	border: 1px solid rgba(0,0,0,0.1);
-	border-radius: 2px;
-	box-sizing: border-box;
-	transition: all 0.25s ease;
-}
-
-
 .field {
 	padding: 3px 0 0 5px;
 	border-width: 0;
