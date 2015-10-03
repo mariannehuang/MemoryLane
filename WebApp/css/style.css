@@ -78,7 +78,7 @@ a {
 	display: inline;
 	line-height: 2;
 	margin-left: 10px;
-	width: 20%;
+	width: 30%;
 	height: 50%;
 	border: 1px solid transparent;
 	background-color: white;
@@ -88,6 +88,8 @@ a {
 }
 .user-info{
 	color: #0082ac;
+	
+
 }
 
 .user-intro{
@@ -98,7 +100,7 @@ a {
 	display: inline;
 	line-height: 2;
 	color:  #0082ac;
-	width: 20%;
+	width: 30%;
 	height: 50%;
 	border: 1px solid transparent;
 	background-color: white;
@@ -182,12 +184,12 @@ a.lnk-flat:hover{
 	border-color:#bbb #bbb #999;
 	overflow: hidden;
 	vertical-align: middle;
-	border-radius: 3px;
+	
 	height:24px;
 	padding: 0 8px;
 	line-height: 24px;
 	border: 1px solid #d9d9d9;
-	-webkit-border-radius: 0 4px 4px 0;
+	-webkit-border-radius: 4px;
 	margin: 0!important;
 	-webkit-appearance: none;
 	background-color: #d9d9d9;
@@ -240,7 +242,7 @@ a:active{
 	display: block;
 	position: relative;
 	width: 580px;
-	height: 94px;
+
 	border: 3px dashed #eee;
 	margin: 3px 0;
 	text-align: center;
@@ -317,7 +319,7 @@ a:active{
 
 .btn {
 	padding: 5px 16px;
-	height: 27px;
+
 	border-radius: 3px;
 	right: 55%;
 	color: white;
@@ -478,13 +480,13 @@ a.signup {
 
 
 .field {
-	padding: 3px 0 0 5px;
+
 	border-width: 0;
 	text-align: left;
 	margin: 10px 0;
 	height: 36px;
 	border: 1px solid rgba(0,0,0,0.1);
-	border-radius: 2px;
+	border-radius: 3px;
 	box-sizing: border-box;
 	transition: all 0.25s ease;
 }
