@@ -263,7 +263,7 @@ a:active{
 	display: block;
 	position: relative;
 	width: 580px;
-	height: 94px;
+
 	border: 3px dashed #eee;
 	margin: 3px 0;
 	text-align: center;
@@ -340,7 +340,7 @@ a:active{
 
 .btn {
 	padding: 5px 16px;
-	height: 27px;
+
 	border-radius: 3px;
 	right: 55%;
 	color: white;
@@ -501,13 +501,13 @@ a.signup {
 
 
 .field {
-	padding: 3px 0 0 5px;
+	
 	border-width: 0;
 	text-align: left;
 	margin: 10px 0;
 	height: 36px;
 	border: 1px solid rgba(0,0,0,0.1);
-	border-radius: 2px;
+	border-radius: 3px;
 	box-sizing: border-box;
 	transition: all 0.25s ease;
 }
