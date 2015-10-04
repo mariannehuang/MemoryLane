@@ -3,12 +3,13 @@ body{
 	font-family: Argh, Arial;
 	color: #282828;
 	/*background-color: #dadfe1;*/
-	background-color:  #0082ac;
+	background-color:  #e5ebe4;
 	
 }
 
 a {
 	color: black;
+	text-decoration: none;
 }
 .profilepic{
 	padding-top: 50px;
@@ -42,8 +43,8 @@ h3
 	padding-right: 20px; 
 	padding-left: 10px; 
 	margin-right: 10px;
-	background-color: #CE421E;
-	color: white;
+	background-color: #edf4ed;
+	color: #072;
 }
 
 .profileheader {
@@ -135,6 +136,7 @@ h3
 
 #content {
 	min-height: 420px;
+	padding-left: 30px;
 }
 .h1{
 	word-wrap: break-word;
@@ -163,7 +165,7 @@ h3
 }
 .row{
 	overflow: hidden;
-
+	outline: none;
 	margin-bottom: 20px;
 }
 .control-panel{
@@ -230,6 +232,7 @@ a:active{
 
 .row.note-text label.field{
 	font-size: 14px;
+	font-weight: bold;
 	
 
 }
@@ -292,7 +295,8 @@ a:active{
 .row.note-title label.field{
 	font-size: 14px;
 	color: white;
-	background-color:#CE421E ;
+	background-color:#83bf73 ;
+	font-weight: bold;
 
 }
 .row.note-privacy label.field{
@@ -316,6 +320,7 @@ a:active{
 	border: 1px solid #ccc;
 	margin-top: 5px;
 	height: 400px;
+	outline: none;
 
 }
 #form_note textarea{
@@ -346,7 +351,7 @@ a:active{
 	border-radius: 3px;
 	right: 55%;
 	color: white;
-	background-color: #CE421E;
+	background-color: #83bf73;
 	border: 1px solid white;
 
 	
@@ -400,11 +405,12 @@ input{
 	font-weight: inherit;
 	vertical-align: middle;
 	margin-right: 3px;
+	outline: none;
 }
 
 .profilelink {
 	text-decoration: none;
-	color: white;
+	color: #072;
 }
 
 .button {
@@ -503,16 +509,12 @@ a.signup {
 
 
 .field {
-<<<<<<< HEAD
-	
-=======
 
->>>>>>> newpost
 	border-width: 0;
 	text-align: left;
 	margin: 10px 0;
 	height: 36px;
-	border: 1px solid rgba(0,0,0,0.1);
+	background-color: #83bf73;
 	border-radius: 3px;
 	box-sizing: border-box;
 	transition: all 0.25s ease;
