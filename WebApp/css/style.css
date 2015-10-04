@@ -67,6 +67,7 @@ h3
 	margin-top: 0; 
 	margin-bottom: 0;
 	font-family: Snell Roundhand;
+	font-weight: 900;
 }
 
 .headercog {
@@ -97,7 +98,7 @@ h3
 	 
 	
 	float:right; 
-	color:  #0082ac;
+	color:  #37a;
 	font-family: Helvetica;
 	display: inline;
 	line-height: 2;
@@ -111,7 +112,7 @@ h3
 	padding-top:10px;
 }
 .user-info{
-	color: #0082ac;
+	color: #37a;
 	
 
 }
@@ -123,7 +124,7 @@ h3
 	font-family: Helvetica;
 	display: inline;
 	line-height: 2;
-	color:  #0082ac;
+	color:  #37a;
 	width: 30%;
 	height: 50%;
 	border: 1px solid transparent;
@@ -649,7 +650,7 @@ input[type=submit]:hover {
 	border: 2px solid transparent;
 	margin-top: 15px;
 	background-color: white;
-	color: #0082ac;
+	color: #37a;
 }
 
 .panoramaResize{
