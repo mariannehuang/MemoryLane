@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.views.generic import TemplateView
-
+from . import views
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^settings/', TemplateView.as_view(template_name='settings.html'), name="settings"),
@@ -25,6 +25,8 @@ urlpatterns = [
     url(r'^passwordreset/', TemplateView.as_view(template_name='password-reset.html'), name="passwordreset"),
     url(r'^login/', TemplateView.as_view(template_name='login.html'), name="login"),
     url(r'^friends/', TemplateView.as_view(template_name='friends.html'), name="friends"),
+    url(r'^profiletest/(?P<user_id>[0-9]+)/$', views.profiletest, name='profiletest'),
+    url(r'^userlist/$', views.userlist, name='userlist'),
     
     
 ]
