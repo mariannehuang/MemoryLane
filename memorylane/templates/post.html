@@ -7,91 +7,141 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 </head>
 
 <body>
 <div class="header">
-	<div class="profileheader">
-		<a href="#" class="profilelink"><h2 class="profilename">MATTHEW_ONG</h2></a>
-	</div>
+    <div class="profileheader" style="padding-right: 200px;">
+        <a href="#" class="profilelink"><h2 class="profilename">MATTHEW_ONG</h2></a>
+    </div>
 <div class="settingheader">
-	<a href="settings.html" class="profilelink"><h2 class="headercog"><i class="fa fa-cog"></i></h2></a>
-	</div>	
-	<div class="logo">
-		
-			
-		<a href="#" class="profilelink"><h1 class="headermaintext">Memory Lane</h1></a>
-		
-	</div>
+    <a href="settings.html" class="profilelink"><h2 class="headercog" style="float: right;"><i class="fa fa-cog" style="font-size: 30px; padding-left: 20px;"></i></h2></a>
+    <form class="searchbox" style="float:right;">
+        <input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+       
+        <span class="searchbox-icon"><i class="fa fa-search" style="font-size: 30px;"></i></span>
+    </form>
+    
+    </div>  
+    <div class="logo">
+        
+            
+        <a href="#" class="profilelink"><h1 class="headermaintext">Memory Lane</h1></a>
+        
+    </div>
 
-</div>	
-	
-	<hr>
-	
-	
+</div>  
+    
+    <hr>
+    
+    
 <!-- div to hold all elements of a single timeline post -->
 <div class="container2">
 
-	
+    
 
-	<!-- div to hold panaroma shot and top bar(title and date) -->
-	<div class = "panoramaElement">
-		<div class="panoramaHeader">
-			<p class="panoramaLeft">Amazing Fields</p>
-			<p class="panoramaRight">4/20/2015</p>
-		</div>
-		<img src="img/panorama.jpg" class="panoramaResize">
-		
-		<div class="mapDiv">
-			<p class="textRemember">I remember...</p>
-			<p class="textBody">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet ex turpis, at posuere eros placerat ac. Donec volutpat libero quis faucibus hendrerit. Suspendisse vitae volutpat ligula. Mauris at justo vitae nisl laoreet varius ut eu lectus. Vivamus dapibus at risus vel imperdiet. Pellentesque tincidunt in ligula et tristique. Duis faucibus est in mi ultricies rutrum. Ut varius ut dui eget tristique. Proin pulvinar, risus vitae faucibus tempor, erat metus vulputate dui, sed dignissim urna dolor vel ante. Nulla a leo purus. Donec eget molestie odio. Suspendisse ac nisi faucibus, imperdiet sem eget, semper mi.
-			</p>
-			<p class="textWith">with...</p>
-			<div class="shared">
-				<div class="authorElement">
-					<a href="profile.html" class="profilelink"><img src="img/profile.jpg" class="proPicResize">
-					<!-- should be poster's first name -->
-					<p class ="proPicName">Matthew</p>
-					</a>
-				</div>
-				<div class="authorElement">
-					<a href="profile.html" class="profilelink">
-					<img src="img/profile.jpg" class="proPicResize">
-					<!-- should be poster's first name -->
-					<p class ="proPicName">Matthew</p>
-					</a>
-				</div>
-				<div class="authorElement">
-					<a href="profile.html" class="profilelink">
-					<img src="img/profile.jpg" class="proPicResize">
-					<!-- should be poster's first name -->
-					<p class ="proPicName">Matthew</p>
-					</a>
-				</div>
-				<div class="authorElement">
-					<a href="profile.html" class="profilelink">
-					<img src="img/profile.jpg" class="proPicResize">
-					<!-- should be poster's first name -->
-					<p class ="proPicName">Matthew</p>
-					</a>
-				</div>
-			</div>
-			
-		</div>
-		
-		<div class="map">
-			<img src="img/map.jpg" class="mapImage">
-		</div>
-		
-	</div>
-	<br>
+    <!-- div to hold panaroma shot and top bar(title and date) -->
+    <div class = "panoramaElement">
+        <div class="panoramaHeader">
+            <p class="panoramaLeft">Amazing Fields</p>
+            <p class="panoramaRight">4/20/2015</p>
+        </div>
+        <img src="img/panorama.jpg" class="panoramaResize">
+        
+        <div class="mapDiv">
+            <p class="textRemember">I remember...</p>
+            <p class="textBody">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet ex turpis, at posuere eros placerat ac. Donec volutpat libero quis faucibus hendrerit. Suspendisse vitae volutpat ligula. Mauris at justo vitae nisl laoreet varius ut eu lectus. Vivamus dapibus at risus vel imperdiet. Pellentesque tincidunt in ligula et tristique. Duis faucibus est in mi ultricies rutrum. Ut varius ut dui eget tristique. Proin pulvinar, risus vitae faucibus tempor, erat metus vulputate dui, sed dignissim urna dolor vel ante. Nulla a leo purus. Donec eget molestie odio. Suspendisse ac nisi faucibus, imperdiet sem eget, semper mi.
+            </p>
+            <p class="textWith">with...</p>
+            <div class="shared">
+                <div class="authorElement">
+                    <a href="profile.html" class="profilelink"><img src="img/profile.jpg" class="proPicResize">
+                    <!-- should be poster's first name -->
+                    <p class ="proPicName">Matthew</p>
+                    </a>
+                </div>
+                <div class="authorElement">
+                    <a href="profile.html" class="profilelink">
+                    <img src="img/profile.jpg" class="proPicResize">
+                    <!-- should be poster's first name -->
+                    <p class ="proPicName">Matthew</p>
+                    </a>
+                </div>
+                <div class="authorElement">
+                    <a href="profile.html" class="profilelink">
+                    <img src="img/profile.jpg" class="proPicResize">
+                    <!-- should be poster's first name -->
+                    <p class ="proPicName">Matthew</p>
+                    </a>
+                </div>
+                <div class="authorElement">
+                    <a href="profile.html" class="profilelink">
+                    <img src="img/profile.jpg" class="proPicResize">
+                    <!-- should be poster's first name -->
+                    <p class ="proPicName">Matthew</p>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="map">
+            <img src="img/map.jpg" class="mapImage">
+        </div>
+        
+    </div>
+    <br>
 
 
 
 
 </div>
+
+<script>
+  $(document).ready(function(){
+            var submitIcon = $('.searchbox-icon');
+            var inputBox = $('.searchbox-input');
+            var searchBox = $('.searchbox');
+            var isOpen = false;
+            submitIcon.click(function(){
+                if(isOpen == false){
+                    searchBox.addClass('searchbox-open');
+                    inputBox.focus();
+                    isOpen = true;
+                } else {
+                    searchBox.removeClass('searchbox-open');
+                    inputBox.focusout();
+                    isOpen = false;
+                }
+            });  
+             submitIcon.mouseup(function(){
+                    return false;
+                });
+            searchBox.mouseup(function(){
+                    return false;
+                });
+            $(document).mouseup(function(){
+                    if(isOpen == true){
+                        $('.searchbox-icon').css('display','block');
+                        submitIcon.click();
+                    }
+                });
+        });
+            function buttonUp(){
+                var inputVal = $('.searchbox-input').val();
+                inputVal = $.trim(inputVal).length;
+                if( inputVal !== 0){
+                    $('.searchbox-icon').css('display','none');
+                } else {
+                    $('.searchbox-input').val('');
+                    $('.searchbox-icon').css('display','block');
+                }
+            }
+</script>
+
 
 </body>
 </html>
