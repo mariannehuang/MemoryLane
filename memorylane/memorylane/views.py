@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse
 
 from .models import User, Memory
@@ -24,7 +24,9 @@ def settings(request):
 	return render(request, 'settings.html', {})
 
 def post(request):
-	return render(request, 'post.html', {})
+	memory = get_object_or_404(Memory, pk=1)
+	author = get_object_or_404(User, pk=memory.author)
+	return render(request, 'post.html', {'memory': memory, 'author': author})
 
 def passwordreset(request):
 	return render(request, 'password-reset.html', {})

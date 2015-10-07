@@ -14,7 +14,8 @@
 <body>
 <div class="header">
     <div class="profileheader" style="padding-right: 200px;">
-        <a href="#" class="profilelink"><h2 class="profilename">MATTHEW_ONG</h2></a>
+        
+        <a href="#" class="profilelink"><h2 class="profilename">{{author.first_name}}</h2></a>
     </div>
 <div class="settingheader">
     <a href="settings.html" class="profilelink"><h2 class="headercog" style="float: right;"><i class="fa fa-cog" style="font-size: 30px; padding-left: 20px;"></i></h2></a>
@@ -45,15 +46,15 @@
     <!-- div to hold panaroma shot and top bar(title and date) -->
     <div class = "panoramaElement">
         <div class="panoramaHeader">
-            <p class="panoramaLeft">Amazing Fields</p>
-            <p class="panoramaRight">4/20/2015</p>
+            <p class="panoramaLeft">{{memory.name}}</p>
+            <p class="panoramaRight">{{memory.date_created}}</p>
         </div>
         <img src="img/panorama.jpg" class="panoramaResize">
         
         <div class="mapDiv">
             <p class="textRemember">I remember...</p>
             <p class="textBody">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet ex turpis, at posuere eros placerat ac. Donec volutpat libero quis faucibus hendrerit. Suspendisse vitae volutpat ligula. Mauris at justo vitae nisl laoreet varius ut eu lectus. Vivamus dapibus at risus vel imperdiet. Pellentesque tincidunt in ligula et tristique. Duis faucibus est in mi ultricies rutrum. Ut varius ut dui eget tristique. Proin pulvinar, risus vitae faucibus tempor, erat metus vulputate dui, sed dignissim urna dolor vel ante. Nulla a leo purus. Donec eget molestie odio. Suspendisse ac nisi faucibus, imperdiet sem eget, semper mi.
+            {{memory.description}}
             </p>
             <p class="textWith">with...</p>
             <div class="shared">
