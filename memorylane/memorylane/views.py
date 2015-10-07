@@ -6,7 +6,13 @@ from .models import User, Memory
 #	return render(request, 'signup.html', {})
 
 def profiletest(request, user_id):
-	return HttpResponse("You're looking at user %s." % user_id)
+	u = User.objects.get(pk=user_id)
+	output = ("<h1>You're looking at user %s.</h1>" % user_id)
+	
+	output = output + "<br>" + u.first_name + " " + u.last_name
+
+
+	return HttpResponse(output)
 
 def userlist(request):
 	lastest_user_list = User.objects.order_by('pk')[:5]
