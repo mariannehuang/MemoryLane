@@ -2,8 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 from .models import User, Memory
-#def signup(request):
-#	return render(request, 'signup.html', {})
 
 def profiletest(request, user_id):
 	u = User.objects.get(pk=user_id)
@@ -18,3 +16,21 @@ def userlist(request):
 	lastest_user_list = User.objects.order_by('pk')[:5]
 	output = ', '.join([u.first_name for u in lastest_user_list])
 	return HttpResponse(output)
+
+def signup(request):
+	return render(request, 'signup.html', {})
+
+def settings(request):
+	return render(request, 'settings.html', {})
+
+def post(request):
+	return render(request, 'post.html', {})
+
+def passwordreset(request):
+	return render(request, 'password-reset.html', {})
+
+def login(request):
+	return render(request, 'login.html', {})
+
+def friends(request):
+	return render(request, 'friends.html', {})
