@@ -19,12 +19,12 @@ from django.views.generic import TemplateView
 from . import views
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^settings/', TemplateView.as_view(template_name='settings.html'), name="settings"),
-    url(r'^signup/', TemplateView.as_view(template_name='signup.html'), name="signup"),
-    url(r'^post/', TemplateView.as_view(template_name='post.html'), name="post"),
-    url(r'^passwordreset/', TemplateView.as_view(template_name='password-reset.html'), name="passwordreset"),
-    url(r'^login/', TemplateView.as_view(template_name='login.html'), name="login"),
-    url(r'^friends/', TemplateView.as_view(template_name='friends.html'), name="friends"),
+    url(r'^settings/', views.settings, name='settings'),
+    url(r'^signup/', views.signup, name='signup'),
+    url(r'^post/', views.post, name="post"),
+    url(r'^passwordreset/', views.passwordreset, name="passwordreset"),
+    url(r'^login/', views.login, name="login"),
+    url(r'^friends/', views.friends, name="friends"),
     url(r'^profiletest/(?P<user_id>[0-9]+)/$', views.profiletest, name='profiletest'),
     url(r'^userlist/$', views.userlist, name='userlist'),
     
