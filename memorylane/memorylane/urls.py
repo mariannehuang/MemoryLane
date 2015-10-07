@@ -18,7 +18,6 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 
 urlpatterns = [
-
     url(r'^admin/', include(admin.site.urls)),
     url(r'^settings/', TemplateView.as_view(template_name='settings.html'), name="settings"),
     url(r'^signup/', TemplateView.as_view(template_name='signup.html'), name="signup"),
@@ -26,5 +25,6 @@ urlpatterns = [
     url(r'^passwordreset/', TemplateView.as_view(template_name='password-reset.html'), name="passwordreset"),
     url(r'^login/', TemplateView.as_view(template_name='login.html'), name="login"),
     url(r'^friends/', TemplateView.as_view(template_name='friends.html'), name="friends"),
+    
     
 ]
