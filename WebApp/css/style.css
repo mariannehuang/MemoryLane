@@ -515,10 +515,12 @@ a.signup {
 	text-align: left;
 	margin: 10px 0;
 	height: 36px;
-	background-color: #83bf73;
+	background-color: #dadfe1;
 	border-radius: 3px;
 	box-sizing: border-box;
 	transition: all 0.25s ease;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .field:focus {
 	box-shadow: 0 0 2px rgba(0,0,0,0.5);
